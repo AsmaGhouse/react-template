@@ -68,24 +68,75 @@ export default function HeroSection() {
       </div>
 
      {/* Stats Section */}
-<div className="flex flex-col md:flex-row justify-center items-center gap-6 m-4 w-full max-w-4xl">
+       <div className="flex flex-col md:flex-row justify-center items-center gap-6 m-4 w-full max-w-4xl">
 
-  <div className="border rounded-xl py-6 px-8 text-center shadow-sm flex-1">
-    <p className="text-lg font-semibold">Total Projects</p>
-    <p className="text-3xl font-bold text-purple-600">12</p>
-  </div>
+      {/* Total Projects */}
+      <Card
+        sx={{
+          flex: 1,
+          background: "linear-gradient(135deg, #6366F1, #A855F7)",
+          color: "white",
+          borderRadius: "16px",
+          paddingY: 3,
+          textAlign: "center",
+          boxShadow: "0 6px 20px rgba(99, 102, 241, 0.3)",
+        }}
+      >
+        <CardContent>
+          <Typography variant="h6" fontWeight={600}>
+            Total Projects
+          </Typography>
+          <Typography variant="h3" fontWeight="bold">
+            12
+          </Typography>
+        </CardContent>
+      </Card>
 
-  <div className="border rounded-xl py-6 px-8 text-center shadow-sm flex-1">
-    <p className="text-lg font-semibold">Templates Used</p>
-    <p className="text-3xl font-bold text-purple-600">8</p>
-  </div>
+      {/* Templates Used */}
+      <Card
+        sx={{
+          flex: 1,
+          background: "linear-gradient(135deg, #EC4899, #F97316)",
+          color: "white",
+          borderRadius: "16px",
+          paddingY: 3,
+          textAlign: "center",
+          boxShadow: "0 6px 20px rgba(236, 72, 153, 0.3)",
+        }}
+      >
+        <CardContent>
+          <Typography variant="h6" fontWeight={600}>
+            Templates Used
+          </Typography>
+          <Typography variant="h3" fontWeight="bold">
+            8
+          </Typography>
+        </CardContent>
+      </Card>
 
-  <div className="border rounded-xl py-6 px-8 text-center shadow-sm flex-1">
-    <p className="text-lg font-semibold">Components</p>
-    <p className="text-3xl font-bold text-purple-600">45</p>
-  </div>
+      {/* Components */}
+      <Card
+        sx={{
+          flex: 1,
+          background: "linear-gradient(135deg, #10B981, #3B82F6)",
+          color: "white",
+          borderRadius: "16px",
+          paddingY: 3,
+          textAlign: "center",
+          boxShadow: "0 6px 20px rgba(16, 185, 129, 0.3)",
+        }}
+      >
+        <CardContent>
+          <Typography variant="h6" fontWeight={600}>
+            Components
+          </Typography>
+          <Typography variant="h3" fontWeight="bold">
+            45
+          </Typography>
+        </CardContent>
+      </Card>
 
-</div>
+    </div>
 
     </div>
     </div>
