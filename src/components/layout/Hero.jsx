@@ -12,12 +12,12 @@ const Hero = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-5xl md:text-3xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
           Website Templates for<br />modern stacks.
         </h1>
 
         {/* Description */}
-        <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-md text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
           Launch your SEO friendly fully-functional website or landing pages within hours with
           Fast Page Speed. Built with HTML5, Next.js, Astro, Tailwind CSS & Sanity CMS.
         </p>
@@ -70,6 +70,8 @@ const Hero = () => {
             Component Library
           </Button>
         </div>
+
+       
 
         {/* Technology Stack Label */}
         <div className="mt-16">
