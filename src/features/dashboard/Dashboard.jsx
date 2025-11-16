@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
 
 export default function HeroSection() {
   return (
@@ -67,19 +68,19 @@ export default function HeroSection() {
         </Button>
       </div>
 
-     {/* Stats Section */}
-       <div className="flex flex-col md:flex-row justify-center items-center gap-6 m-4 w-full max-w-4xl">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-6 m-4 w-full max-w-4xl">
 
       {/* Total Projects */}
       <Card
         sx={{
           flex: 1,
-          background: "linear-gradient(135deg, #6366F1, #A855F7)",
+          background: "linear-gradient(135deg, rgba(99,102,241,0.75), rgba(168,85,247,0.75))",
+          backdropFilter: "blur(10px)",
           color: "white",
-          borderRadius: "16px",
-          paddingY: 3,
+          borderRadius: "18px",
+          paddingY: 2,
           textAlign: "center",
-          boxShadow: "0 6px 20px rgba(99, 102, 241, 0.3)",
+          boxShadow: "0 6px 25px rgba(99, 102, 241, 0.25)",
         }}
       >
         <CardContent>
@@ -96,12 +97,13 @@ export default function HeroSection() {
       <Card
         sx={{
           flex: 1,
-          background: "linear-gradient(135deg, #EC4899, #F97316)",
+          background: "linear-gradient(135deg, rgba(236,72,153,0.75), rgba(249,115,22,0.75))",
+          backdropFilter: "blur(10px)",
           color: "white",
-          borderRadius: "16px",
-          paddingY: 3,
+          borderRadius: "18px",
+          paddingY: 2,
           textAlign: "center",
-          boxShadow: "0 6px 20px rgba(236, 72, 153, 0.3)",
+          boxShadow: "0 6px 25px rgba(236, 72, 153, 0.25)",
         }}
       >
         <CardContent>
@@ -118,12 +120,13 @@ export default function HeroSection() {
       <Card
         sx={{
           flex: 1,
-          background: "linear-gradient(135deg, #10B981, #3B82F6)",
+          background: "linear-gradient(135deg, rgba(16,185,129,0.75), rgba(59,130,246,0.75))",
+          backdropFilter: "blur(10px)",
           color: "white",
-          borderRadius: "16px",
-          paddingY: 3,
+          borderRadius: "18px",
+          paddingY: 2,
           textAlign: "center",
-          boxShadow: "0 6px 20px rgba(16, 185, 129, 0.3)",
+          boxShadow: "0 6px 25px rgba(16,185,129,0.25)",
         }}
       >
         <CardContent>
@@ -137,7 +140,6 @@ export default function HeroSection() {
       </Card>
 
     </div>
-
     </div>
     </div>
   );
