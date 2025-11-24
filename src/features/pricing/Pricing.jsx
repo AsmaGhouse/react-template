@@ -36,6 +36,7 @@ const Pricing = () => {
           Choose the perfect plan for your needs
         </p>
       </div>
+      <div className="h-20 w-20 bg-amber-600 rounded-full"></div>
 
       {/* Cards */}
       <div className="mt-4">
@@ -86,7 +87,7 @@ const Pricing = () => {
               <Button
                 fullWidth
                 variant="contained"
-                className={`!text-white !py-3 !rounded-lg !font-semibold ${plan.buttonColor}`}
+                className={`text-white! py-3! rounded-lg! font-semibold! ${plan.buttonColor}`}
               >
                 Get Started
               </Button>

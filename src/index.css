@@ -10,3 +10,6 @@ body {
 #root {
   min-height: 100vh;
 }
+.css-12yu0uz-MuiModal-root-MuiDrawer-root .MuiDrawer-paper {
+    width: 205px !important;
+}
