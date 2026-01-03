@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { KeyboardArrowDown } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
-const Dropdown = ({ label, items }) => {
+const Dropdown = ({ label, items, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -20,7 +21,7 @@ const Dropdown = ({ label, items }) => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex gap-1 text-gray-700 hover:text-gray-900 transition-colors duration-200 py-2"
+        className={`flex gap-1 transition-colors duration-200 py-2 items-center ${className || 'text-gray-700 hover:text-gray-900'}`}
       >
         {label}
         <KeyboardArrowDown
@@ -30,16 +31,16 @@ const Dropdown = ({ label, items }) => {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50 transition-all duration-200 opacity-100 scale-100">
+        <div className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50 transition-all duration-200 opacity-100 scale-100">
           {items.map((item, index) => (
-            <a
+            <Link
               key={index}
-              href={item.href}
-              className="flex items-center justify-center h-10 text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+              to={item.href}
+              className="flex items-center px-4 h-10 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-150 text-sm"
               onClick={() => setIsOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       )}

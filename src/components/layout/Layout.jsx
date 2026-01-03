@@ -15,10 +15,10 @@ const Layout = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50 dark:bg-[#0B1120] text-gray-900 dark:text-white transition-colors duration-200">
       <TopNav onMenuClick={handleMenuClick} />
       <Sidebar isOpen={sidebarOpen} onClose={handleSidebarClose} />
-      <main>
+      <main className="lg:ml-[205px] pt-5 transition-all duration-300">
         <Outlet />
       </main>
     </div>

@@ -36,8 +36,11 @@ const Pricing = () => {
           Choose the perfect plan for your needs
         </p>
       </div>
-      <div className="h-20 w-20 bg-amber-600 rounded-full"></div>
-
+      <div className="flex">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       {/* Cards */}
       <div className="mt-4">
      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
